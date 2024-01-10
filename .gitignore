@@ -1,0 +1,6 @@
+# Development environments
+.env
+__pycache__/
+*.pyc
+*.db
+instance/
