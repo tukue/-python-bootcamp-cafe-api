@@ -4,6 +4,7 @@ import os
 from flask import request
 import secrets
 from dotenv import load_dotenv
+
 '''
 Install the required packages first: 
 Open the Terminal in PyCharm (bottom left). 
@@ -50,9 +51,6 @@ with app.app_context():
 @app.route("/")
 def home():
     return render_template("index.html")
-
-
-# HTTP GET - Read Record
 
 # HTTP GET - Get All Cafes
 @app.route("/cafes")
@@ -144,7 +142,6 @@ def update_price(cafe_id):
 
 
 # HTTP DELETE - Delete Record
-# ... 
 @app.route("/delete/<int:id>", methods=['DELETE'])
 def delete_cafe(id):
       
